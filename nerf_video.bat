@@ -12,4 +12,8 @@ set /p fps=Enter FPS value:
 rem Call the Python script, passing the file path as an argument
 python "%~dp0\scripts\colmap2nerf.py" --video_in "%filepath%" --video_fps %fps% --run_colmap --aabb_scale 16
 
+rem Call the instant-ngp GUI and pass the transforms file for dataset training
 %~dp0\instant-ngp.exe %root_folder%\transforms.json
+
+rem keep the command window open
+cmd /k

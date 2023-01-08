@@ -10,4 +10,8 @@ rem Call the colmap2nerf python script, passing the folder path as an argument
 rem Modify --colmap_matcher to "sequential" if you images are taken in spatial sequence
 python "%~dp0\scripts\colmap2nerf.py" --colmap_matcher exhaustive --run_colmap --aabb_scale 16 --images "%folderpath%"
 
+rem Call the instant-ngp GUI and pass the transforms file for dataset training
 %~dp0\instant-ngp.exe %parent_folder%\transforms.json
+
+rem keep the command window open
+cmd /k
