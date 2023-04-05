@@ -5,6 +5,8 @@ Instant NGP Batch Readme:
 
 NVIDIA Released Windows binaries for their popular [Instant-NGP](https://github.com/NVlabs/instant-ngp). Their binaries let you drag datasets into the GUI assuming you have image-based datasets that have been prepared for training ahead of time. For the no-code community, working with a command line interface can be daunting. To this end, I have created two universal batch files that streamline image prep to NeRF training without the need to use a command line interface.
 
+[Watch My Video On 1 Click Automation for NeRFs](https://www.youtube.com/watch?v=-ummgy1Qy00)
+
 ## Requirements
 
 ### Binaries
